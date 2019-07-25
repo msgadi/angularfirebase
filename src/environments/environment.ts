@@ -11,7 +11,7 @@ export const environment = {
   projectId: '<Your PROJECT ID>',
   storageBucket: '',
   messagingSenderId: '<Your MESSAGING SENDER ID>',
-  appId: '<Your MESSAGING SENDER ID>'
+  appId: '1'
 }
 };
 
