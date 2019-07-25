@@ -8,7 +8,7 @@ export class FirebaseService {
   constructor(public db: AngularFirestore) {}
 
   getAvatars() {
-    return this.db.collection('/avatar').valueChanges();
+    return this.db.collection('/avatars').valueChanges();
   }
 
   getUser(userKey) {
@@ -58,7 +58,8 @@ export class FirebaseService {
       name: value.name,
       nameToSearch: value.name.toLowerCase(),
       surname: value.surname,
-      age: parseInt(value.age),
+      age: parseInt(value.age, null),
+      traveler: 'Yo! Buddy',
       avatar
     });
   }
